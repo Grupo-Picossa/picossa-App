@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Productos</title>
+
+</head>
+<body>
+
+<header>
+    <div class="cabezera">
+<div class="logo-box"><img src="https://www.picossa.com/wp-content/uploads/2020/02/cropped-logo-png.png" alt=""></div>
+<div class="app-name"><h1 class="app-title"> Picossa App</h1></div>
+</div>
+
+<nav>
+<ul>
+    <li><a class="menu-item" href="productos.html">Productos</a></li>
+    <li><a  class="menu-item"href="ventas.html">Ventas</a></li>
+    <li><a class="menu-item"href="compras.html">Compras</a></li>
+    <li><a class="menu-item"href="EstadosFinancieros.html">Estado Financieros</a></li>
+</ul>
+
+</nav>
+
+
+</header>
+<main class="main">
+    <div>
+
+        <form method="POST" id="crear-producto" action="">
+
+            <h3>Crear Nuevo Producto</h3>
+            
+            <label  for="">Referencia</label>
+            <input id='ref' type="text">
+
+            <label for="">Descripcion </label>
+            <input id="descripcion" type="text">
+
+            
+
+            <label for="">Talla</label>
+            <select name="Talla" id="talla">
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="2Xl">2XL</option>
+                <option value="3XL">3XL</option>
+                <option value="4XL">4XL</option>
+                
+            </select>
+
+            <label for="">Precio</label>
+            <input id="precio" type="number">
+
+
+            <input id="crearBtn" value="Crear" type="submit">
+        </form>
+    </div>
+</main>
+
+<footer>
+<div class="footer">
+
+</div>
+
+</footer>
+
+<script src="producto.js"></script>
+    
+</body>
+</html>
