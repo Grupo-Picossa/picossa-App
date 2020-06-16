@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="menu.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="productos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <title>Productos</title>
 
 </head>
@@ -30,20 +33,25 @@
 
 </header>
 <main class="main">
-    <div>
+    <div class="box-form">
 
         <form method="POST" id="crear-producto" action="">
 
-            <h3>Crear Nuevo Producto</h3>
-            
+            <h3 class="new-product">Crear Nuevo Producto</h3>
+
+
+            <div class="form-item">
             <label  for="">Referencia</label>
             <input id='ref' type="text">
+            </div>
 
+
+            <div class="form-item">
             <label for="">Descripcion </label>
             <input id="descripcion" type="text">
-
+             </div>
             
-
+            <div class="form-item">
             <label for="">Talla</label>
             <select name="Talla" id="talla">
                 <option value="L">L</option>
@@ -51,15 +59,40 @@
                 <option value="2Xl">2XL</option>
                 <option value="3XL">3XL</option>
                 <option value="4XL">4XL</option>
-                
             </select>
-
+            </div> 
+            
+           
+            
+            <div class="form-item">
             <label for="">Precio</label>
             <input id="precio" type="number">
+            </div>
 
-
+            <div class="form-item">
             <input id="crearBtn" value="Crear" type="submit">
+            </div>
+
         </form>
+
+
+        <form class="consultar-producto" method="POST" action="">
+
+            <h3 class="new-product">Consultar Productos</h3>
+            <label for=""> Referencia</label>
+            <input type="search">
+            <button type="submit" ><i class="fas fa-search"></i> </button>
+            <div id="dato-consulta">
+
+            </div>
+
+
+
+
+
+        </form>
+
+
     </div>
 </main>
 
