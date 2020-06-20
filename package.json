@@ -1,0 +1,25 @@
+{
+  "name": "picossa-app",
+  "version": "1.0.0",
+  "description": "Aplicacion de Contabilidad Picossa",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grupo-Picossa/picossa-App.git"
+  },
+  "author": "Luis Tejada - Andres Tejada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Grupo-Picossa/picossa-App/issues"
+  },
+  "homepage": "https://github.com/Grupo-Picossa/picossa-App#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1"
+  }
+}
