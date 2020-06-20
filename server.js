@@ -13,10 +13,7 @@ appPicossa.use('/assets', express.static('assets'));
 
 appPicossa.use(bodyParser.urlencoded({ extended: true }));
 
-appPicossa.get('/saludo', function(req, res) {
-    res.end(`Hola ${req.query.name}`)
-});
-
+// Rutas
 appPicossa.get('/', function(req, res) {
     res.render('productos')
 });
@@ -30,6 +27,10 @@ appPicossa.get('/ventas', function(req, res) {
 
 appPicossa.get('/compras', function(req, res) {
     res.render('compras')
+});
+
+appPicossa.get('/estadosfinancieros', function(req, res) {
+    res.render('estadosfinancieros')
 });
 
 appPicossa.listen(3000);
