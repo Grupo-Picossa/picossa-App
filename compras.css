@@ -1,0 +1,29 @@
+
+
+.compra-box{
+    width: 100%;
+}
+
+.main-title{
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.box-items{
+    display: block;
+    font-size: 1,2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0.6em;
+}
+
+
+.fixed-items{
+
+    width: 40%;
+    border: 1px solid grey;
+    box-shadow: 1px 1px 5px rgb(173, 169, 169), -1px -1px 5px rgb(173, 169, 169);
+    margin: 1em auto;
+    padding: 1em;
+
+}

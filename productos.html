@@ -64,10 +64,7 @@
             
            
             
-            <div class="form-item">
-            <label for="">Precio</label>
-            <input id="precio" type="number">
-            </div>
+            
 
             <div class="form-item">
             <input id="crearBtn" value="Crear" type="submit">
@@ -76,12 +73,14 @@
         </form>
 
 
-        <form class="consultar-producto" method="POST" action="">
+        <form  id="form-consultar" class="consultar-producto" method="POST" action="">
 
             <h3 class="new-product">Consultar Productos</h3>
             <label for=""> Referencia</label>
-            <input type="search">
-            <button type="submit" ><i class="fas fa-search"></i> </button>
+            <input id="consultar-producto" type="search">
+            <button   type="submit" ><i class="fas fa-search"></i> </button>
+            
+            
             <div id="dato-consulta">
 
             </div>
