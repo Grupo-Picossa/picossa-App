@@ -1,6 +1,8 @@
 
 
 .compra-box{
+    display: flex;
+    flex-flow: nowrap column;
     width: 100%;
 }
 
@@ -37,3 +39,25 @@ input[type="text"]:focus,input[type="number"]:focus,input[type="date"]:focus{
     outline: 1px solid blue;
 }
 
+
+.comprasBtn{
+    width: max-content;
+    padding: 0.5em;
+    background-color: red;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    justify-content: center;
+    margin: 1em auto;
+    border-radius: 5px;
+    border: 1px solid rgb(143, 7, 7);
+    box-shadow: 1px 1px 1px black;
+    transition: 0.3s;
+
+}
+
+.comprasBtn:hover{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+    color: white;
+}
