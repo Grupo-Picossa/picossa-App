@@ -1,7 +1,16 @@
 // capturar Datos
 const formulario = document.getElementById("crear-producto");
 const formConsulta = document.getElementById("consultar-producto");
+const productoBtn = document.getElementById('productoBtn')
 // addEventListener//
+eventlistener()
+
+function eventlistener(){
+
+document.addEventListener('DOMContentLoaded',iniciarproducto)
+
+}
+
  formulario.addEventListener("submit", function (e) {
     e.preventDefault();
     
@@ -26,3 +35,6 @@ formConsulta.addEventListener("submit",function(e){
   }); 
 
 // funciones
+function iniciarproducto(){
+productoBtn.disabled = true
+}
