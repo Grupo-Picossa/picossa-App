@@ -79,13 +79,23 @@ input[type="text"] , input[type="number"] ,input[type="search"]{
     border-radius: 5px;
     justify-content: center;
     margin: 0 auto;
+    cursor: pointer;
     
 }
 
 #crearBtn:hover#crearBtn{
    box-shadow: 1px 1px 3px black;
-   cursor: pointer;
+   
+   
     
+}
+
+#crearBtn:disabled{
+    background-color: gray;
+    cursor: default;
+    border: grey;
+    transform: scale(1,1);
+    box-shadow: 0px 0px 0px;
 }
 
 
