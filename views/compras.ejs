@@ -7,6 +7,9 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/normalize.css">
     <link rel="stylesheet" href="./assets/compras.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+
     <title>Compras</title>
 </head>
 <body>
@@ -38,20 +41,20 @@
         <h1 class="main-title">Ingreso de Compras</h1>
         
 
-        <form method="post" action="">
-            <section class="fixed-items">
+        <form id="formulariocompras" method="post" action="">
+            <section  class="fixed-items">
 
-            <label class="box-items" for="">Orden de pedido</label>
-            <input type="text">
+            <label  class="box-items" for="">Orden de pedido</label>
+            <input id="ordenpedido" type="text">
 
             <label class="box-items" for="">Costo de Envio</label>
-            <input type="number">
+            <input id="costoEnvio" type="number" >
 
             <label class="box-items" for="">TRM</label>
-            <input type="number">
+            <input id="trm" type="number" >
 
             <label class="box-items" for="">Fecha</label>
-            <input type="date">
+            <input  id="fecha" type="date">
         </section>
 
         <section class="varible-items" >
@@ -60,13 +63,13 @@
             <h2 class="compras-h2">Producto</h2>
 
             <label class="box-items" for="">Referencia</label>
-            <input type="text">
+            <input id="referencia" type="text">
 
             <label class="box-items" for="">Descripcion</label>
-            <input type="text">
+            <input  id="descripcion" type="text">
 
             <label class="box-items" for="">Talla</label>
-            <select name="" id="">
+            <select id="talla" name="" id="">
                 <option value="">L</option>
                 <option value="">XL</option>
                 <option value="">3XL</option>
@@ -74,27 +77,29 @@
             </select>
 
             <label class="box-items" for="">Peso</label>
-            <input type="number">
+            <input id="peso" type="number">
 
             <label class="box-items" for="">Cantidad</label>
-            <input type="number">
+            <input id="cantidad" type="number">
 
             <label class="box-items" for="">Precio</label>
-            <input type="number">
+            <input id="precio" type="number">
 
-
+            <button class="Btnplus"> <i class="fas fa-plus"></i> </button>
 
         </section>
+
+        
 
 
           
 
-
+        <input id="grabarBtn" class="comprasBtn" type="submit"  value="Grabar">
 
         </form>
 
 
-        <input id="comprasBtn" class="comprasBtn" type="submit"  value="Ingresar Compras">
+       
 
 
 
