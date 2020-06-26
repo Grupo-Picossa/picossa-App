@@ -28,6 +28,7 @@
     margin: 1em auto;
     padding: 1em;
     position: relative;
+    
 
 }
 
@@ -43,6 +44,7 @@ input[type="text"]:focus,input[type="number"]:focus,input[type="date"]:focus{
 
 .comprasBtn{
     width: max-content;
+    display: block;
     padding: 0.5em;
     background-color: red;
     font-size: 1.3em;
@@ -61,6 +63,15 @@ input[type="text"]:focus,input[type="number"]:focus,input[type="date"]:focus{
     transform: scale(1.1,1.1);
     cursor: pointer;
     color: white;
+}
+
+.comprasBtn:disabled{
+    color: whitesmoke;
+    background-color: grey;
+    box-shadow: none;
+    cursor: default;
+    border: 1px solid grey;
+    
 }
 
 
