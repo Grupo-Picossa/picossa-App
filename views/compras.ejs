@@ -36,9 +36,10 @@
 
 </header>
 <main class="main">
+    <h1 class="main-title">Ingreso de Compras</h1>
     <div class="compra-box" >
 
-        <h1 class="main-title">Ingreso de Compras</h1>
+        
         
 
         <form id="formulariocompras" method="post" action="">
@@ -68,6 +69,17 @@
             <label class="box-items" for="">Descripcion</label>
             <input  id="descripcion" type="text">
 
+            <label class="box-items" for="">Categoria</label>
+            <select id="categoria" name="" >
+                
+                <option value="Babydolls">babydolls</option>
+                <option value="">pantys</option>
+                <option value="">bodys</option>
+                <option value="">bralette</option>
+                <option value="">ligueros</option>
+                <option value="">Vestido de malla</option>
+            </select>
+
             <label class="box-items" for="">Talla</label>
             <select id="talla" name="" id="">
                 <option value="">L</option>
@@ -85,21 +97,21 @@
             <label class="box-items" for="">Precio</label>
             <input id="precio" type="number">
 
-            <button id="Btnplus" class="Btnplus"> <i class="fas fa-plus"></i> </button>
-        </div>
+        
+    
 
         </section>
 
-        
+                
 
-
-          
-
-        <input id="grabarBtn" class="comprasBtn" type="submit"  value="Grabar">
+        <input id="grabarBtn" class="comprasBtn" type="submit"  value="Adicionar">
 
         </form>
 
+        <div class="new-elements" id="new-elements" >
+           
 
+        </div>
        
 
 

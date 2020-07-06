@@ -14,12 +14,14 @@ const talla = document.getElementById("talla");
 const peso = document.getElementById("peso");
 const cantidad = document.getElementById("cantidad");
 const precio = document.getElementById("precio");
+const categoria = document.getElementById('categoria')
 // boton para crear mas formularios//
 
-const btnPlus = document.getElementById('Btnplus')
-const contenerdorFormulario = document.getElementById('variableItems')
 
-console.log(btnPlus)
+const contenerdorFormulario = document.getElementById('variableItems')
+const newElements = document.getElementById('new-elements')
+
+
 
 //eventlistener
 eventlistener();
@@ -42,11 +44,12 @@ function eventlistener() {
     peso.addEventListener("blur", validarCampo);
     cantidad.addEventListener("blur", validarCampo);
     precio.addEventListener("blur", validarCampo);
+    categoria.addEventListener('blur',validarCampo)
 
 
 //evento para boton plus//
 
-btnPlus.addEventListener('click',crearFormulario)
+
   
 
   
@@ -75,8 +78,15 @@ function capturarDatos(e) {
   const peso = document.getElementById("peso").value;
   const cantidad = document.getElementById("cantidad").value;
   const precio = document.getElementById("precio").value;
+  const categoria = document.getElementById('categoria').value
 
-  console.log(ordenPedido);
+
+  console.log(categoria);
+
+  //esta funcion crea los elementos capturado y los ponne al lado del formulario//
+
+  crearNuevoElmento(referencia)
+  
 }
 
 function validarCampo() {
@@ -86,6 +96,8 @@ function validarCampo() {
     }
 
   validarLongitud(this);
+
+
 }
 
 function validarLongitud(campo) {
@@ -98,45 +110,20 @@ function validarLongitud(campo) {
   }
 }
 
-function crearFormulario(){
-    const contenedorFormulario = document.getElementById('formulariocompras')
 
-    let html =  `
-    <section  id="varibleItems"class="varible-items" >
+function crearNuevoElmento(referencia){
 
-            <div id="card-box" >
-            <h2 class="compras-h2">Producto</h2>
 
-            <label class="box-items" for="">Referencia</label>
-            <input id="referencia" type="text">
+  const newElements = document.getElementById('new-elements')
 
-            <label class="box-items" for="">Descripcion</label>
-            <input  id="descripcion" type="text">
+let div = document.createElement('div')
 
-            <label class="box-items" for="">Talla</label>
-            <select id="talla" name="" id="">
-                <option value="">L</option>
-                <option value="">XL</option>
-                <option value="">3XL</option>
-                <option value="">4XL</option>
-            </select>
+div.classList.add('newElementStyle')
 
-            <label class="box-items" for="">Peso</label>
-            <input id="peso" type="number">
+let html = `<p> ${referencia}</p>`
 
-            <label class="box-items" for="">Cantidad</label>
-            <input id="cantidad" type="number">
+newElements.appendChild(div).innerHTML = html
 
-            <label class="box-items" for="">Precio</label>
-            <input id="precio" type="number">
-
-            <button id="Btnplus" class="Btnplus"> <i class="fas fa-plus"></i> </button>
-        </div>
-
-        </section>
-    
-    `
-    
-    contenedorFormulario.innerHTML += html
+console.log(referencia)
 
 }
