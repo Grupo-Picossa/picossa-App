@@ -81,11 +81,11 @@ function capturarDatos(e) {
   const categoria = document.getElementById('categoria').value
 
 
-  console.log(categoria);
+  console.log(talla);
 
   //esta funcion crea los elementos capturado y los ponne al lado del formulario//
 
-  crearNuevoElmento(referencia)
+  crearNuevoElmento(descripcion,ordenPedido,costoEnvio,trm,fecha,referencia,talla,peso,cantidad,precio,categoria)
   
 }
 
@@ -111,7 +111,7 @@ function validarLongitud(campo) {
 }
 
 
-function crearNuevoElmento(referencia){
+function crearNuevoElmento(descripcion,ordenPedido,costoEnvio,trm,fecha,referencia,talla,peso,cantidad,precio,categoria){
 
 
   const newElements = document.getElementById('new-elements')
@@ -120,7 +120,22 @@ let div = document.createElement('div')
 
 div.classList.add('newElementStyle')
 
-let html = `<p> ${referencia}</p>`
+let html = `<h2 class="title-new-element"> ${descripcion}</h2>
+<div class = "information-box">
+ <h3> Orden de Pedido:<p>${ordenPedido}</p></h3>
+ <h3> Costo de envio:<p>${costoEnvio}</p></h3>
+ <h3> TRM:<p>${trm}</p></h3>
+ <h3> Fecha:<p>${fecha}</p></h3>
+ <h3> Referencia:<p>${referencia}</p></h3>
+ <h3> Descripcion:<p>${descripcion}</p></h3>
+ <h3> Categoria:<p>${categoria}</p></h3>
+ <h3> Talla:<p>${talla}</p></h3>
+ <h3> Cantidad:<p>${cantidad}</p></h3>
+ <h3> Peso:<p>${peso}</p></h3>
+ <h3> Precio:<p>${precio}</p></h3>
+</div>
+
+`
 
 newElements.appendChild(div).innerHTML = html
 
