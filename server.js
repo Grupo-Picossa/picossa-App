@@ -1,6 +1,8 @@
 // Crear servidor Web
 const express = require("express");
 const bodyParser = require("body-parser");
+const mysql2 = require('mysql2');
+const sequelize = require('sequelize');
 
 const appPicossa = express();
 
@@ -12,6 +14,8 @@ appPicossa.use('/assets', express.static('assets'));
 
 
 appPicossa.use(bodyParser.urlencoded({ extended: true }));
+
+
 
 // Rutas
 appPicossa.get('/', function(req, res) {
