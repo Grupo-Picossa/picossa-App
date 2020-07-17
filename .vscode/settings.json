@@ -1,0 +1,17 @@
+{
+   "sqltools.connections": [
+      {
+         "database": "db_picossa",
+         "driver": "MySQL",
+         "mysqlOptions": {
+            "authProtocol": "default"
+         },
+         "name": "localhost",
+         "password": "Lutejada10$",
+         "port": 3306,
+         "previewLimit": 50,
+         "server": "localhost",
+         "username": "root"
+      }
+   ]
+}
