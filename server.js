@@ -12,6 +12,10 @@ appPicossa.set('view engine', 'ejs');
 // servir archivos estaticos
 appPicossa.use('/assets', express.static('assets'));
 
+// ruta del controlador de productos
+const Products = require('./controllers/produts');
+
+// nota
 
 appPicossa.use(bodyParser.urlencoded({ extended: true }));
 
